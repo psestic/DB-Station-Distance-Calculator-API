@@ -29,8 +29,6 @@ def api(start: str, end: str):
     # get station names
     start_name = stations.loc[stations["DS100"] == start]["NAME"].squeeze()
     end_name = stations.loc[stations["DS100"] == end]["NAME"].squeeze()
-    print(start_name)
-    print(end_name)
 
     # get station coordinates
     lon_start = stations.loc[stations["DS100"] == start]["Laenge"].squeeze()
